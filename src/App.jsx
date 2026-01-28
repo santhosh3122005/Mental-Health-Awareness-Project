@@ -1,23 +1,22 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
-import Home from "./components/Home.jsx";
-import About from "./components/About.jsx";
-import Awareness from "./components/Awareness.jsx";
-import Contact from "./components/Contact.jsx";
+import Home from "./Components/Home.jsx";
+import About from "./Components/About.jsx";
+import Awareness from "./Components/Awareness.jsx";
+import Contact from "./Components/Contact.jsx";
+import Navbar from "./Components/Navbar.jsx";
 import "./App.css";
 function App() {
   const [messages, setMessages] = useState([]);
+
   return (
     <BrowserRouter>
       <header>
         <h1>Mental Health Awareness</h1>
       </header>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/awareness">Awareness</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+
+      <Navbar />
+
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
