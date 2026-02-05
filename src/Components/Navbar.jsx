@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 function Navbar() {
   return (
     <nav
@@ -16,12 +15,10 @@ function Navbar() {
     </nav>
   );
 }
-
 const linkStyle = {
   color: "white",
   margin: "0 15px",
   textDecoration: "none",
   fontWeight: "bold"
 };
-
 export default Navbar;

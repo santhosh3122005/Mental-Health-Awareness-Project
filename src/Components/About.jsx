@@ -1,38 +1,36 @@
 function About() {
   return (
-    <div>
-      <h2>About This Project</h2>
-      <img
-        src="https://cdn.pixabay.com/video/2023/01/13/146414-789177031_tiny.jpg"
-        alt="Mental Health Awareness"
-        style={{
-          width: "100%",
-          height: "auto",   // height auto → aspect ratio maintain
-          borderRadius: "8px",
-          marginBottom: "20px",
-          boxShadow: "0 4px 8px rgba(0,0,0,0.1)"  // optional shadow
-        }}
-      />
-      <p>
-        Mental health awareness is vital in today’s fast-paced world.  
-        This project educates users about mental well-being, encourages positive thinking, 
-        and provides a platform to share awareness messages.
+    <div className="about">
+      <h2 className="about-title">About This Project</h2>
+      <p className="about-desc">
+        This Mental Health Awareness project is created to educate people about
+        mental well-being and encourage healthy habits using a simple web
+        interface.
       </p>
-      <p>
-        It helps reduce the stigma surrounding mental health issues, 
-        promotes open conversations, and encourages seeking help when needed.
-      </p>
-      <p>
-        Users can navigate through various sections, learn about mental health,
-        and contribute their own messages to promote awareness.
-      </p>
-      <h3>Key Features of This Project</h3>
-      <ul>
-        <li>Four-page structure: Home, About, Awareness, Contact</li>
-        <li>Awareness page with CRUD operations for messages</li>
-        <li>Responsive layout with navigation bar</li>
-        <li>Images to enhance understanding and visual appeal</li>
-      </ul>
+      <section className="about-section">
+        <h3>🎯 Project Objectives</h3>
+        <ul>
+          <li>Spread awareness about mental health</li>
+          <li>Encourage stress-free and healthy living</li>
+          <li>Provide simple mental health tips</li>
+          <li>Allow users to share awareness messages</li>
+        </ul>
+      </section>
+      <section className="about-section">
+        <h3>🧭 Pages Included</h3>
+        <ul>
+          <li>Home – Introduction & tips</li>
+          <li>Awareness – Add & view awareness messages</li>
+          <li>Contact – Support & help details</li>
+          <li>Login / Signup – User authentication</li>
+        </ul>
+      </section>
+      <section className="about-section">
+        <h3>⚙️ Technologies Used</h3>
+        <p>
+          React JS, React Router, CSS, Local Storage
+        </p>
+      </section>
     </div>
   );
 }
